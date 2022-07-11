@@ -1,0 +1,27 @@
+{
+  "name": "KING OVERLORD BOT",
+  "description": "KING OVERLORD BOT | By: KING OVERLORD TM | KING OVERLORD",
+  "repository": "https://github.com/kingoverlord/King-Overlord-Bot",
+  "logo": "https://i.ibb.co/YyscCLM/King-Overlord-Lost.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+            "url": "https://github.com/yespark/heroku-imagemagick-buildpack"
+        },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
